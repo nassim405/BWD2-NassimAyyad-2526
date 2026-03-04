@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Architects | Wie zijn we</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-950 text-gray-200 font-sans">
+
+    <header class="bg-gray-900 border-b border-blue-500 sticky top-0 z-50 shadow-lg shadow-blue-500/10">
+
+        <div class="w-full flex justify-between items-center py-6 px-6">
+
+            <!-- LOGO -->
+            <h1 class="text-2xl md:text-4xl font-extrabold text-blue-500 tracking-wider">
+                Nova Architects
+            </h1>
+
+            <!-- DESKTOP NAV -->
+            <nav class="hidden md:flex space-x-10 text-lg font-semibold">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="wie-zijn-we.html" class="hover:text-blue-400 transition">Wie zijn we</a>
+                <a href="aanbod.html" class="hover:text-blue-400 transition">Aanbod</a>
+                <a href="realisaties.html" class="hover:text-blue-400 transition">Realisaties</a>
+                <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+                <a href="werken-bij.html" class="hover:text-blue-400 transition">Werken bij</a>
+            </nav>
+
+            <!-- HAMBURGER BUTTON (MOBIEL) -->
+            <button type="button" id="menu-btn" class="md:hidden text-blue-400 focus:outline-none">
+                ☰
+            </button>
+
+        </div>
+
+        <!-- MOBIEL MENU -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800 px-6 pb-6">
+            <div class="flex flex-col space-y-4 text-lg font-semibold">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="wie-zijn-we.html" class="hover:text-blue-400 transition">Wie zijn we</a>
+                <a href="aanbod.html" class="hover:text-blue-400 transition">Aanbod</a>
+                <a href="realisaties.html" class="hover:text-blue-400 transition">Realisaties</a>
+                <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+                <a href="werken-bij.html" class="hover:text-blue-400 transition">Werken bij</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- SCRIPT VOOR MENU TOGGLE -->
+    <script>
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+
+
+    <!-- HERO -->
+    <section class="py-24 text-center bg-gradient-to-br from-gray-950 via-gray-900 to-black px-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+            Wie zijn <span class="text-blue-500">wij?</span>
+        </h2>
+        <p class="max-w-3xl mx-auto text-gray-400 text-lg">
+            Nova Architects is een vooruitstrevend architectenbureau dat de grenzen van design en technologie verlegt.
+            Wij combineren minimalistisch design met futuristische innovaties om unieke woningen te creëren.
+        </p>
+    </section>
+
+    <!-- MISSIE & VISIE -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+
+            <div class="bg-gray-800 p-10 rounded-2xl shadow-lg">
+                <h3 class="text-2xl font-bold text-blue-500 mb-6">Onze Missie</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Onze missie is het ontwerpen van duurzame, slimme en futuristische woningen
+                    die perfect aansluiten bij de levensstijl van morgen.
+                    We gebruiken innovatieve bouwtechnieken zoals 3D-printing
+                    en energie-neutrale systemen om woningen efficiënter en milieuvriendelijker te maken.
+                </p>
+            </div>
+
+            <div class="bg-gray-800 p-10 rounded-2xl shadow-lg">
+                <h3 class="text-2xl font-bold text-blue-500 mb-6">Onze Visie</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Wij geloven dat architectuur meer is dan bouwen alleen.
+                    Het is het creëren van een ervaring.
+                    In de toekomst zullen huizen volledig geïntegreerd zijn met technologie,
+                    duurzaamheid en comfort. Nova Architects wil daarin een leidende rol spelen.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WAARDEN -->
+    <section class="py-20 bg-black">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-white mb-12">
+                Onze <span class="text-blue-500">waarden</span>
+            </h3>
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+                <div class="bg-gray-900 p-8 rounded-2xl">
+                    <h4 class="text-xl font-semibold text-blue-400 mb-4">Innovatie</h4>
+                    <p class="text-gray-400">
+                        We zoeken altijd naar nieuwe technologieën en slimme oplossingen.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-2xl">
+                    <h4 class="text-xl font-semibold text-blue-400 mb-4">Duurzaamheid</h4>
+                    <p class="text-gray-400">
+                        Milieubewust ontwerpen staat centraal in elk project.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-2xl">
+                    <h4 class="text-xl font-semibold text-blue-400 mb-4">Kwaliteit</h4>
+                    <p class="text-gray-400">
+                        Wij leveren alleen het hoogste niveau van afwerking en design.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-white mb-12">
+                Ons <span class="text-blue-500">team</span>
+            </h3>
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+                <!-- Teamlid 1 -->
+                <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
+                    <img src="img/Ons team/Liam ceo.jpg" alt="CEO" class="rounded-xl mb-6 mx-auto">
+                    <h4 class="text-xl font-semibold text-blue-400">Liam Vermeer</h4>
+                    <p class="text-gray-400 text-sm mt-2">CEO &amp; Hoofdarchitect</p>
+                </div>
+
+                <!-- Teamlid 2 -->
+                <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
+                    <img src="img/Ons.team/Designer Sophie Janssen.jpg" alt="Designer" class="rounded-xl mb-6 mx-auto">
+                    <h4 class="text-xl font-semibold text-blue-400">Sophie Janssen</h4>
+                    <p class="text-gray-400 text-sm mt-2">Senior Architect</p>
+                </div>
+
+                <!-- Teamlid 3 -->
+                <div class="bg-gray-800 rounded-2xl p-8 shadow-lg">
+                    <img src="img/Ons.team/Noah Technisch Ingenieur.jpg" alt="Engineer" class="rounded-xl mb-6 mx-auto">
+                    <h4 class="text-xl font-semibold text-blue-400">Noah Bakker</h4>
+                    <p class="text-gray-400 text-sm mt-2">Technisch Ingenieur</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-6 text-center text-gray-500 text-sm">
+        © 2026 Nova Architects – Alle rechten voorbehouden
+    </footer>
+
+</body>
+
+</html>

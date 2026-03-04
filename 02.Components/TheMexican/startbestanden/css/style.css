@@ -1,0 +1,49 @@
+/* Algemene layout */
+body {
+  scroll-behavior: smooth;
+}
+
+/* Hero section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=1920')
+    center/cover no-repeat;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero-inner {
+  max-width: 32rem;
+}
+
+/* Tekstblokken */
+.about-text {
+  max-width: 36rem;
+}
+
+/* Menu images */
+.menu-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: .75rem;
+  border-top-right-radius: .75rem;
+}
+
+/* Reviews */
+.review-stars {
+  letter-spacing: 1px;
+}
+
+/* Openingstijden tabel */
+.opening-table td {
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+}
+
+/* Dagmenu kaart */
+.daymenu-card {
+  border-radius: 1rem;
+}

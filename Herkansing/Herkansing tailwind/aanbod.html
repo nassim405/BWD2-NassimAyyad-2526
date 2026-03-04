@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Architects | Aanbod</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-950 text-gray-200 font-sans">
+
+    <header class="bg-gray-900 border-b border-blue-500 sticky top-0 z-50 shadow-lg shadow-blue-500/10">
+
+        <div class="w-full flex justify-between items-center py-6 px-6">
+
+            <!-- LOGO -->
+            <h1 class="text-2xl md:text-4xl font-extrabold text-blue-500 tracking-wider">
+                Nova Architects
+            </h1>
+
+            <!-- DESKTOP NAV -->
+            <nav class="hidden md:flex space-x-10 text-lg font-semibold">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="wie-zijn-we.html" class="hover:text-blue-400 transition">Wie zijn we</a>
+                <a href="aanbod.html" class="hover:text-blue-400 transition">Aanbod</a>
+                <a href="realisaties.html" class="hover:text-blue-400 transition">Realisaties</a>
+                <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+                <a href="werken-bij.html" class="hover:text-blue-400 transition">Werken bij</a>
+            </nav>
+
+            <!-- HAMBURGER BUTTON (MOBIEL) -->
+            <button type="button" id="menu-btn" class="md:hidden text-blue-400 focus:outline-none">
+                ☰
+            </button>
+
+        </div>
+
+        <!-- MOBIEL MENU -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800 px-6 pb-6">
+            <div class="flex flex-col space-y-4 text-lg font-semibold">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="wie-zijn-we.html" class="hover:text-blue-400 transition">Wie zijn we</a>
+                <a href="aanbod.html" class="hover:text-blue-400 transition">Aanbod</a>
+                <a href="realisaties.html" class="hover:text-blue-400 transition">Realisaties</a>
+                <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+                <a href="werken-bij.html" class="hover:text-blue-400 transition">Werken bij</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- SCRIPT VOOR MENU TOGGLE -->
+    <script>
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+
+
+    <!-- HERO -->
+    <section class="py-24 text-center bg-gradient-to-br from-gray-950 via-gray-900 to-black px-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+            Ons <span class="text-blue-500">aanbod</span>
+        </h2>
+        <p class="max-w-3xl mx-auto text-gray-400 text-lg">
+            Nova Architects biedt innovatieve en futuristische oplossingen
+            voor wie verder durft te denken dan standaard woningen.
+        </p>
+    </section>
+
+    <!-- DIENSTEN -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+
+            <!-- Dienst 1 -->
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-blue-500/20 transition">
+                <img src="img/Ons.aanbod/3D-geprintewoningen.jpg" alt="3D-geprint huis" class="rounded-xl mb-6">
+                <h3 class="text-xl font-bold text-blue-500 mb-4">
+                    3D-geprinte woningen
+                </h3>
+                <p class="text-gray-400">
+                    Wij ontwerpen en realiseren woningen die volledig of gedeeltelijk
+                    worden gebouwd met 3D-printtechnologie. Sneller, efficiënter
+                    en duurzamer dan traditionele bouwmethodes.
+                </p>
+            </div>
+
+            <!-- Dienst 2 -->
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-blue-500/20 transition">
+                <img src="img/Ons.aanbod/Duurzameluxevill.jpg" alt="Slimme woning technologie" class="rounded-xl mb-6">
+                <h3 class="text-xl font-bold text-blue-500 mb-4">
+                    Slimme high-tech woningen
+                </h3>
+                <p class="text-gray-400">
+                    Volledig geïntegreerde smart home systemen met AI-aansturing,
+                    automatische verlichting, klimaatregeling en beveiliging
+                    voor maximaal comfort en controle.
+                </p>
+            </div>
+
+            <!-- Dienst 3 -->
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-blue-500/20 transition">
+                <img src="img/Ons.aanbod/Slimmehigh-techwoningen.jpg" alt="Duurzame villa" class="rounded-xl mb-6">
+                <h3 class="text-xl font-bold text-blue-500 mb-4">
+                    Duurzame luxe villa’s
+                </h3>
+                <p class="text-gray-400">
+                    Energie-neutrale villa’s met zonne-energie, warmtepompen
+                    en innovatieve isolatietechnieken voor een minimale
+                    ecologische voetafdruk.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXTRA DIENSTEN -->
+    <section class="py-20 bg-black">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-white mb-12">
+                Extra <span class="text-blue-500">services</span>
+            </h3>
+
+            <div class="grid md:grid-cols-2 gap-10 text-left">
+
+                <div class="bg-gray-900 p-8 rounded-2xl">
+                    <h4 class="text-xl font-semibold text-blue-400 mb-4">
+                        Architectuur op maat
+                    </h4>
+                    <p class="text-gray-400">
+                        Volledig gepersonaliseerde ontwerpen afgestemd op
+                        jouw wensen, budget en toekomstplannen.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-2xl">
+                    <h4 class="text-xl font-semibold text-blue-400 mb-4">
+                        3D-visualisaties &amp; VR
+                    </h4>
+                    <p class="text-gray-400">
+                        Loop virtueel door jouw woning nog voordat de eerste steen is gelegd.
+                        Dankzij realistische 3D-visualisaties en VR-technologie.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-2xl">
+                    <h4 class="text-xl font-semibold text-blue-400 mb-4">
+                        Projectbegeleiding
+                    </h4>
+                    <p class="text-gray-400">
+                        Wij begeleiden het volledige bouwproces van ontwerp tot oplevering,
+                        met maximale transparantie en kwaliteit.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-2xl">
+                    <h4 class="text-xl font-semibold text-blue-400 mb-4">
+                        Renovatie &amp; Transformatie
+                    </h4>
+                    <p class="text-gray-400">
+                        Bestaande woningen worden omgevormd tot futuristische
+                        en energie-efficiënte leefruimtes.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-20 text-center bg-gray-900">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+            Klaar om jouw futuristische woning te realiseren?
+        </h2>
+        <a href="contact.html"
+            class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-2xl text-lg font-semibold transition">
+            Vraag een offerte aan
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-6 text-center text-gray-500 text-sm">
+        © 2026 Nova Architects – Alle rechten voorbehouden
+    </footer>
+
+</body>
+
+</html>

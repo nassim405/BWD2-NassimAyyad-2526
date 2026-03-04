@@ -1,0 +1,53 @@
+/* Algemene layout */
+body {
+  scroll-behavior: smooth;
+}
+
+/* HERO */
+.hero {
+  background: #0d6efd;
+  color: #fff;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-inner {
+  max-width: 60rem;
+  color: #fff;
+}
+
+.hero .lead {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-image {
+  max-height: 320px;
+  object-fit: cover;
+}
+
+/* Tekstblokken */
+.about-text {
+  max-width: 42rem;
+}
+
+/* Service images */
+.service-img {
+  height: 210px;
+  object-fit: cover;
+}
+
+/* Reviews */
+.review-stars {
+  letter-spacing: 1px;
+}
+
+/* Dagactie */
+.daydeal-card {
+  border-radius: 1rem;
+}
+
+/* Offertekaart */
+.offerte-card {
+  border-radius: 1rem;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Architects | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-950 text-gray-200 font-sans">
+
+  <header class="bg-gray-900 border-b border-blue-500 sticky top-0 z-50 shadow-lg shadow-blue-500/10">
+
+    <div class="w-full flex justify-between items-center py-6 px-6">
+
+      <!-- LOGO -->
+      <h1 class="text-2xl md:text-4xl font-extrabold text-blue-500 tracking-wider">
+        Nova Architects
+      </h1>
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden md:flex space-x-10 text-lg font-semibold">
+        <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+        <a href="wie-zijn-we.html" class="hover:text-blue-400 transition">Wie zijn we</a>
+        <a href="aanbod.html" class="hover:text-blue-400 transition">Aanbod</a>
+        <a href="realisaties.html" class="hover:text-blue-400 transition">Realisaties</a>
+        <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+        <a href="werken-bij.html" class="hover:text-blue-400 transition">Werken bij</a>
+      </nav>
+
+      <!-- HAMBURGER BUTTON (MOBIEL) -->
+      <button type="button" id="menu-btn" class="md:hidden text-blue-400 focus:outline-none">
+        ☰
+      </button>
+
+    </div>
+
+    <!-- MOBIEL MENU -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800 px-6 pb-6">
+      <div class="flex flex-col space-y-4 text-lg font-semibold">
+        <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+        <a href="wie-zijn-we.html" class="hover:text-blue-400 transition">Wie zijn we</a>
+        <a href="aanbod.html" class="hover:text-blue-400 transition">Aanbod</a>
+        <a href="realisaties.html" class="hover:text-blue-400 transition">Realisaties</a>
+        <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+        <a href="werken-bij.html" class="hover:text-blue-400 transition">Werken bij</a>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- SCRIPT VOOR MENU TOGGLE -->
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+  <!-- HERO SECTIE -->
+  <section
+    class="min-h-screen flex items-center justify-center text-center px-6 bg-gradient-to-br from-gray-950 via-gray-900 to-black">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6">
+        De toekomst van wonen <span class="text-blue-500">begint hier</span>
+      </h2>
+      <p class="max-w-2xl mx-auto text-lg text-gray-400 mb-8">
+        Nova Architects ontwerpt ultra-moderne en futuristische woningen
+        met innovatieve technologieën zoals 3D-printing en slimme architectuur.
+      </p>
+
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <a href="realisaties.html"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition">
+          Bekijk onze projecten
+        </a>
+
+        <a href="contact.html"
+          class="border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-xl font-semibold transition">
+          Start jouw project
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVER ONS KORT -->
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
+
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-blue-500/20 transition">
+        <h3 class="text-xl font-bold text-blue-500 mb-4">Innovatief Design</h3>
+        <p class="text-gray-400">
+          Wij ontwerpen huizen die hun tijd ver vooruit zijn, met minimalistische
+          vormen en slimme technologie.
+        </p>
+      </div>
+
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-blue-500/20 transition">
+        <h3 class="text-xl font-bold text-blue-500 mb-4">Duurzame Bouw</h3>
+        <p class="text-gray-400">
+          Milieuvriendelijke materialen en energie-neutrale oplossingen
+          staan centraal in elk project.
+        </p>
+      </div>
+
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-blue-500/20 transition">
+        <h3 class="text-xl font-bold text-blue-500 mb-4">High-Tech Oplossingen</h3>
+        <p class="text-gray-400">
+          Van 3D-geprinte woningen tot volledig slimme huizen
+          aangestuurd door AI-technologie.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="py-20 text-center bg-black">
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+      Klaar om jouw droomhuis te bouwen?
+    </h2>
+    <a href="contact.html"
+      class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-2xl text-lg font-semibold transition">
+      Neem contact op
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-950 border-t border-gray-800 py-6 text-center text-gray-500 text-sm">
+    © 2026 Nova Architects – Alle rechten voorbehouden
+  </footer>
+
+</body>
+
+</html>
