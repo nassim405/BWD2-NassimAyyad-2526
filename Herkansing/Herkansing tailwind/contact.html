@@ -14,12 +14,10 @@
 
         <div class="w-full flex justify-between items-center py-6 px-6">
 
-            <!-- LOGO -->
             <h1 class="text-2xl md:text-4xl font-extrabold text-blue-500 tracking-wider">
                 Nova Architects
             </h1>
 
-            <!-- DESKTOP NAV -->
             <nav class="hidden md:flex space-x-10 text-lg font-semibold">
                 <a href="index.html" class="hover:text-blue-400 transition">Home</a>
                 <a href="wie-zijn-we.html" class="hover:text-blue-400 transition">Wie zijn we</a>
@@ -29,14 +27,12 @@
                 <a href="werken-bij.html" class="hover:text-blue-400 transition">Werken bij</a>
             </nav>
 
-            <!-- HAMBURGER BUTTON (MOBIEL) -->
             <button type="button" id="menu-btn" class="md:hidden text-blue-400 focus:outline-none">
                 ☰
             </button>
 
         </div>
 
-        <!-- MOBIEL MENU -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800 px-6 pb-6">
             <div class="flex flex-col space-y-4 text-lg font-semibold">
                 <a href="index.html" class="hover:text-blue-400 transition">Home</a>
@@ -50,7 +46,6 @@
 
     </header>
 
-    <!-- SCRIPT VOOR MENU TOGGLE -->
     <script>
         const btn = document.getElementById("menu-btn");
         const menu = document.getElementById("mobile-menu");
@@ -59,7 +54,6 @@
             menu.classList.toggle("hidden");
         });
     </script>
-
 
     <section class="py-20 px-6">
         <div class="max-w-4xl mx-auto bg-gray-900 p-10 rounded-2xl shadow-lg">
@@ -73,7 +67,16 @@
                 <input type="text" placeholder="Voornaam" class="p-3 rounded bg-gray-800">
                 <input type="text" placeholder="Naam" class="p-3 rounded bg-gray-800">
                 <input type="text" placeholder="Adres" class="p-3 rounded bg-gray-800">
-                <input type="number" placeholder="Budget (€)" class="p-3 rounded bg-gray-800">
+
+                <!-- BUDGET RANGE -->
+                <div>
+                    <p class="mb-2 text-blue-400">Budget (€)</p>
+                    <div class="flex gap-4">
+                        <input type="number" placeholder="Min (€)" class="p-3 rounded bg-gray-800 w-1/2">
+                        <input type="number" placeholder="Max (€)" class="p-3 rounded bg-gray-800 w-1/2">
+                    </div>
+                </div>
+
                 <input type="number" placeholder="Aantal slaapkamers" class="p-3 rounded bg-gray-800">
                 <input type="number" placeholder="Aantal badkamers" class="p-3 rounded bg-gray-800">
 
