@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Robotropolis&trade;</title>
+</head>
+
+<body>
+  <!-- NAVIGATIE (zonder Bootstrap) -->
+  <nav aria-label="navigatie">
+    <div>
+      <a href="#">Robotropolis&trade;</a>
+      <ul>
+        <li><a href="#kaarten">Robotshowroom</a></li>
+        <li><a href="#faq">Robot-FAQ</a></li>
+        <li><a href="#contact">Adoptieformulier</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="bg-success p-5 text-center text-light">
+    <div>
+      <h1>Welkom in Robotropolis</h1>
+      <p>Waar robots klikken, cards shinen en niemand toegeeft dat 'responsive' pure magie was.</p>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+
+    <nav aria-label="breadcrumb">
+      <ol>
+        <li><a href="#">Start</a></li>
+        <li><a href="#kaarten">De Kaartenstapel</a></li>
+        <li aria-current="page">Adoptieformulier</li>
+      </ol>
+    </nav>
+
+
+  <!-- CARDS -->
+  <section id="kaarten">
+    <h2>Robotshowroom</h2>
+
+    <div id="cards">
+      <div>
+        <img src="img/01.webp" alt="Kleurrijke tol">
+        <h3>Lampje-op-het-hoofd robot <span>Bright</span></h3>
+        <p>Hij heeft altijd een &#x27;bright idea&#x27;. Alleen… meestal nét nadat je al op &#x27;submit&#x27; hebt geklikt.</p>
+        <a href="#contact">Klik voor inspiratie</a>
+      </div>
+
+      <div>
+        <img src="img/02.webp" alt="Speelgoed pony figuurtje">
+        <h3>Leesrobot (zeldzaam!) <span>Docs</span></h3>
+        <p>Hij leest de docs. Vrijwillig. We hebben het gemeld aan de wetenschap. Dit is een uniek specimen. Niet twijfelen bij deze, hij zoekt alles voor je op. Tot in de details!</p>
+        <a href="#contact">Open de handleiding</a>
+      </div>
+
+      <div>
+        <img src="img/03.webp" alt="Kleurrijke tol">
+        <h3>Nagel in hoofdrobot <span>Swag</span></h3>
+        <p>Ziet er cool uit, praat in CSS-variabelen en weigert inline styles. Respect, maar ook: help.</p>
+        <a href="#contact">Inspecteer de swag</a>
+      </div>
+
+      <div>
+        <img src="img/04.webp" alt="Vintage View-Master">
+        <h3>Zwemrobot met flamingo <span>Splash</span></h3>
+        <p>Hij zei: &quot;Ik ga even deployen.&quot; We dachten: production. Hij bedoelde: zwembad. Flamingo inbegrepen.</p>
+        <a href="#faq">Laat &#x27;m dobberen</a>
+      </div>
+
+      <div>
+        <img src="img/05.webp" alt="Speelgoed pony figuurtje">
+        <h3>Robot met hond aan de lijn <span>Walkies</span></h3>
+        <p>Probeert een wandeling te maken, maar elke 3 meter doet z&#x27;n hond een pull request. Zonder beschrijving.</p>
+        <a href="#contact">Check de pootafdrukken</a>
+      </div>
+
+      <div>
+        <img src="img/06.webp" alt="Speelgoed pony figuurtje">
+        <h3>Kerstrobot met lichtjes <span>Disco</span></h3>
+        <p>Elke bug laat een lampje knipperen. Op het einde van de sprint: disco. Op het einde van de nacht: migraine.</p>
+        <a href="#faq">Zet &#x27;m op &#x27;glow&#x27;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Veelgestelde robotvragen</h2>
+    <p>Kan ik een robot adopteren zonder handleiding te lezen?</p>
+    <p>Ja. Dat heet 'leven op hard mode'. Onze Leesrobot huilt dan wel zachtjes in de hoek.</p>
+    <p>Waarom knippert mijn robot ineens rood?</p>
+    <p>Dat is zijn manier om te zeggen: 'Er zit een bug in je code'. Of: 'Ik wil koekjes'. 50/50.</p>
+    <p>Moet ik batterijen voorzien of werkt hij op pure motivatie?</p>
+    <p>Pure motivatie is instabiel. Gebruik batterijen… en af en toe een complimentje.</p>
+    
+
+  </section>
+
+  <!-- SNELLE LINKS -->
+  <section>
+    <p>Klik gerust. De robots bijten niet… meestal.</p>
+    <div>
+      <a href="#">Top</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Formulier</a>
+    </div>
+  </section>
+
+  <!-- CONTACT + FORM -->
+  <section id="contact">
+    <div>
+      <div>
+        <h2>Robot-adoptieformulier</h2>
+        <p>Vul dit in alsof je robot écht gaat meekomen. (Spoiler: het is een demo. Rustig blijven.)</p>
+      </div>
+
+      <div>
+        <form id="funForm">
+          <div>
+            <label for="naam">Jouw robotnaam (alias)</label>
+            <input id="naam" type="text" placeholder="bv. Sir Debug-a-lot">
+            <small>Tip: 'robot123' is al geadopteerd.</small>
+          </div>
+
+          <div>
+            <label for="handle">Jouw command-line gebruikersnaam</label>
+            <div>
+              <span>@</span>
+              <input id="handle" type="text" placeholder="terminaltovenaar" aria-describedby="">
+            </div>
+          </div>
+
+          <div>
+            <label for="robotSelect">Welke robot wil je adopteren?</label>
+            <select id="robotSelect">
+              <option value="Lampje-op-het-hoofd robot">Lampje-op-het-hoofd robot</option>
+              <option value="Leesrobot (zeldzaam!)">Leesrobot (zeldzaam!)</option>
+              <option value="Stijlrobot in zwart">Stijlrobot in zwart</option>
+              <option value="Zwemrobot met flamingo">Zwemrobot met flamingo</option>
+              <option value="Robot met hond aan de lijn">Robot met hond aan de lijn</option>
+              <option value="Kerstrobot met lichtjes">Kerstrobot met lichtjes</option>
+            </select>
+            <small>Kies verstandig: sommige robots komen met attitude, andere met handleiding.</small>
+          </div>
+
+          <div>
+            <label for="email">E-mail (voor robotupdates en dramaberichten)</label>
+            <input id="email" type="email" placeholder="naam@example.com">
+          </div>
+
+          <fieldset>
+            <legend>Robot-voorkeuren (checks)</legend>
+            <div>
+              <input id="check1" type="checkbox">
+              <label for="check1">Ik accepteer dat de robot soms '404' mompelt zonder reden</label>
+            </div>
+            <div>
+              <input id="check2" type="checkbox" checked>
+              <label for="check2">Ik beloof hem af en toe te herstarten (met liefde)</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Hoeveel vertrouwen heb je in je robot-skills? (radios)</legend>
+            <div>
+              <input id="radio1" name="zekerheid" type="radio">
+              <label for="radio1">10/10 — ik lees écht de foutmeldingen</label>
+            </div>
+            <div>
+              <input id="radio2" name="zekerheid" type="radio" checked>
+              <label for="radio2">6/10 — ik refresh tot het 'werkt'</label>
+            </div>
+            <div>
+              <input id="radio3" name="zekerheid" type="radio">
+              <label for="radio3">2/10 — ik heb al eens 'sudo please' geprobeerd</label>
+            </div>
+          </fieldset>
+
+          <div id="liveAlertPlaceholder" aria-live="polite"></div>
+
+          <div>
+            <button id="liveAlertBtn" type="button">Adopteer deze robot</button>
+          </div>
+
+          <p><small>Disclaimer: dit is een demo. Maar je robotgevoelens zijn wel echt.</small></p>
+        </form>
+      </div>
+    </div>
+    <div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+<div class="alert alert-secondary" role="alert">
+  A simple secondary alert—check it out!
+</div>
+<div class="alert alert-success" role="alert">
+  A simple success alert—check it out!
+</div>
+<div class="alert alert-danger" role="alert">
+  A simple danger alert—check it out!
+</div>
+<div class="alert alert-warning" role="alert">
+  A simple warning alert—check it out!
+</div>
+<div class="alert alert-info" role="alert">
+  A simple info alert—check it out!
+</div>
+<div class="alert alert-light" role="alert">
+  A simple light alert—check it out!
+</div>
+<div class="alert alert-dark" role="alert">
+  A simple dark alert—check it out!
+</div>
+  </section>
+
+  <footer class="bg-black p-3 text-light text-center">
+    <small>&copy; 2025 Robotropolis&trade; – Alle rechten voorbehouden.
+      <span>Bugs zijn niet inbegrepen. (Maar ze komen vanzelf.)</span>
+    </small>
+  </footer>
+
+</body>
+</html>
